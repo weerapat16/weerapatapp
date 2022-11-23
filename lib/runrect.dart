@@ -2,7 +2,7 @@
  import 'package:weerapatapp/rectangle.dart';
 
 void main(List<String> args) {
-  rectangle rect1 = new rectangle(20,20);
+  rectangle rect1 = new rectangle(20,20,"");
 
   // rect1.setname('Weerapat');
   // rect1.setheight(-10);

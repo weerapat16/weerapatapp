@@ -3,11 +3,11 @@ class rectangle {
     double? _width, _height;
     String? _name;
 //--------------constructors
-    rectangle(double h ,double w){
-      print('Constr');
-      this._height = 100;
-      this._width = 10;
-      this._name = 'Weerapat';
+    rectangle(double h ,double w, String s){
+      print('Name Weerapat');
+      this._height = h;
+      this._width = w;
+      this._name = s;
     }
 
 //-------------------set get
@@ -35,10 +35,19 @@ class rectangle {
     
     double getwidth() => _width!;
     double getheight() => _height!;
+    String getname() => _name!;
 //-------------------------Function
     double computArea(){
       double? area;
       area = _width! * _height!;
       return area;
     }
+
+  void displaydetail() {
+    print("Height : ${getheight()}");
+    print("Width : ${getwidth()}");
+    print("Comput : ${computArea()}");
+   
+
+  }
 }
